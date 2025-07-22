@@ -1,9 +1,13 @@
 server:
-  port: 8083
+  port: 8082
 
 spring:
   application:
-    name: user-service
+    name: order-service
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
 
 eureka:
   client:
